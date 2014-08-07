@@ -2,6 +2,8 @@
 
 > Run [Selenium]() tests [Mocha](http://visionmedia.github.io/mocha/) and [wd]
 
+*Forked from [gulp-mocha](https://github.com/sindresorhus/gulp-mocha) by [Sindre Sorhus](http://sindresorhus.com)*
+
 ## Install
 
 ```bash
@@ -121,4 +123,4 @@ For CoffeeScript support, add `require('coffee-script')` with CoffeeScript 1.6- 
 
 ## License
 
-[MIT](http://opensource.org/licenses/MIT) © [Sindre Sorhus](http://sindresorhus.com)
+[MIT](http://opensource.org/licenses/MIT)
