@@ -1,0 +1,48 @@
+{
+  "name": "gulp-mocha-selenium",
+  "version": "0.0.1",
+  "description": "Run Selenium tests with wd and Mocha",
+  "license": "MIT",
+  "repository": "wookiehangover/gulp-mocha-selenium",
+  "author": {
+    "name": "Sam Breed",
+    "email": "sam@quickleft.com",
+    "url": "http://quickleft.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "gulpplugin",
+    "mocha",
+    "test",
+    "testing",
+    "unit",
+    "framework",
+    "runner",
+    "tdd",
+    "bdd",
+    "qunit",
+    "spec",
+    "tap",
+    "selenium"
+  ],
+  "dependencies": {
+    "freeport": "^1.0.3",
+    "gulp-util": "^3.0.0",
+    "mocha": "^1",
+    "selenium-launcher": "git://github.com/wookiehangover/nodejs-selenium-launcher",
+    "through2": "^0.5.1",
+    "wd": "^0.3.4"
+  },
+  "devDependencies": {
+    "async": "^0.9.0",
+    "gulp": "^3.8.7"
+  }
+}
