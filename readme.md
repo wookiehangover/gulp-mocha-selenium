@@ -1,6 +1,6 @@
 # [gulp](http://gulpjs.com)-mocha-selenium
 
-> Run [Selenium]() tests [Mocha](http://visionmedia.github.io/mocha/)
+> Run [Selenium](http://docs.seleniumhq.org/) tests with [Mocha](http://visionmedia.github.io/mocha/)
 > and [wd](https://github.com/admc/wd)
 
 [![wercker status](https://app.wercker.com/status/0630f024f26bf2803460604597fdf77b/m "wercker status")](https://app.wercker.com/project/bykey/0630f024f26bf2803460604597fdf77b)

@@ -1,6 +1,6 @@
 {
   "name": "gulp-mocha-selenium",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Run Selenium tests with wd and Mocha",
   "license": "MIT",
   "repository": "wookiehangover/gulp-mocha-selenium",
