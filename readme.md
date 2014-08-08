@@ -1,8 +1,12 @@
 # [gulp](http://gulpjs.com)-mocha-selenium
 
-> Run [Selenium]() tests [Mocha](http://visionmedia.github.io/mocha/) and [wd]
+> Run [Selenium]() tests [Mocha](http://visionmedia.github.io/mocha/)
+> and [wd](https://github.com/admc/wd)
 
-*Forked from [gulp-mocha](https://github.com/sindresorhus/gulp-mocha) by [Sindre Sorhus](http://sindresorhus.com)*
+[![wercker status](https://app.wercker.com/status/0630f024f26bf2803460604597fdf77b/m "wercker status")](https://app.wercker.com/project/bykey/0630f024f26bf2803460604597fdf77b)
+
+*Forked from [gulp-mocha](https://github.com/sindresorhus/gulp-mocha) by
+[Sindre Sorhus](http://sindresorhus.com)*
 
 ## Install
 
@@ -18,10 +22,10 @@ var gulp = require('gulp');
 var mochaSelenium = require('gulp-mocha');
 
 gulp.task('default', function () {
-	return gulp.src('test.js', {read: false})
-		.pipe(mochaSelenium({
-			reporter: 'nyan'
-		}));
+  return gulp.src('test.js', {read: false})
+    .pipe(mochaSelenium({
+      reporter: 'nyan'
+    }));
 });
 ```
 
@@ -34,29 +38,82 @@ gulp.task('default', function () {
 
 #### options.browserName
 
-Type: `String`
-Default: `firefox`
+Type: `String`  
+Default: `firefox`  
 Values: `firefox`, `chrome`, `safari`, `phantomjs`
 
 The browser to use when launching selenium.
 
-*WD options*
+
+#### options.host
+
+Type: `String`  
+Default: `null`
+
+*Optional*
+
+A remote Selenium host to connect to.
+
+
+#### options.port
+
+Type: `Number`  
+Default: `null`
+
+*Optional*
+
+The port of the remote Selenium host.
+
+
+#### options.username
+
+Type: `String`  
+Default: `null`
+
+*Optional*
+
+Username for a remote host.
+
+
+#### options.accesskey
+
+Type: `String`  
+Default: `null`
+
+*Optional*
+
+Username for a remote host.
+
+
+
+**WD options**
 
 #### options.usePromises
 
-Type: `Boolean`
+Type: `Boolean`  
 Default: `false`
 
-Use the [wd]() [promise remote]().
+Use the [wd](https://github.com/admc/wd) [promise remote]().
+
 
 #### options.useChaining
 
-Type: `Boolean`
+Type: `Boolean`  
 Default: `false`
 
-Use the [wd]() [chaining remote]().
+Use the [wd](https://github.com/admc/wd) [chaining remote]().
 
-*Mocha Options*
+
+#### options.useSystemPhantom
+
+Type: `Boolean`  
+Default: `false`
+
+Use your current path to look for PhantomJS when running headless tests.
+
+
+
+**Mocha Options**
 
 #### options.ui
 
@@ -120,6 +177,8 @@ Only run tests matching the given pattern which is internally compiled to a RegE
 For CoffeeScript support, add `require('coffee-script')` with CoffeeScript 1.6- or `require('coffee-script/register')` with CoffeeScript 1.7+.
 
 ### PhantomJS
+
+For PhantomJs support, either use your locally installed version with the `useSystemPhantom` option or install PhantomJS via npm with `npm install --save-dev phantomjs`.
 
 ## License
 
