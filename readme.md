@@ -22,8 +22,9 @@ var gulp = require('gulp');
 var mochaSelenium = require('gulp-mocha');
 
 gulp.task('default', function () {
-  return gulp.src('test.js', {read: false})
+  return gulp.src('test/functional/**/*-test.js', {read: false})
     .pipe(mochaSelenium({
+      browserName: 'chrome',
       reporter: 'nyan'
     }));
 });
