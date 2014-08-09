@@ -19,7 +19,7 @@ $ npm install --save-dev gulp-mocha-selenium
 
 ```js
 var gulp = require('gulp');
-var mochaSelenium = require('gulp-mocha');
+var mochaSelenium = require('gulp-mocha-selenium');
 
 gulp.task('default', function () {
   return gulp.src('test/functional/**/*-test.js', {read: false})
