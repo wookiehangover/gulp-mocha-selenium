@@ -80,12 +80,12 @@ module.exports = function (options) {
     });
 
     browser.on('status', function(info){
-      gutil.log('\x1b[36m%s\x1b[0m', info);
+      gutil.log('\x1b[36m', info, '\x1b[0m');
     });
 
     browser.on('command', function(meth, path, data){
       if (options.verbose) {
-        gutil.log(' > \x1b[33m%s\x1b[0m: %s', meth, path, data || '');
+        gutil.log(' > \x1b[33m', meth, '\x1b[0m: ',  path, data || '');
       }
     });
 
