@@ -85,7 +85,7 @@ module.exports = function (options) {
 
     browser.on('command', function(meth, path, data){
       if (options.verbose) {
-        gutil.log(' > \x1b[33m', meth, '\x1b[0m: ',  path, data || '');
+        gutil.log(' > \x1b[33m', meth, '\x1b[0m: ', path, data || '');
       }
     });
 
