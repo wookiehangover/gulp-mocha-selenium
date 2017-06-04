@@ -1,6 +1,6 @@
 # [gulp](http://gulpjs.com)-mocha-selenium
 
-> Run [Selenium](http://docs.seleniumhq.org/) tests with [Mocha](http://visionmedia.github.io/mocha/)
+> Run [Selenium](http://docs.seleniumhq.org/) tests with [Mocha](http://mochajs.org/)
 > and [wd](https://github.com/admc/wd)
 
 [![wercker status](https://app.wercker.com/status/0630f024f26bf2803460604597fdf77b/m "wercker status")](https://app.wercker.com/project/bykey/0630f024f26bf2803460604597fdf77b)
@@ -129,7 +129,7 @@ The interface to use.
 
 Type: `String`  
 Default: `dot`  
-Values: [reporters](https://github.com/visionmedia/mocha/tree/master/lib/reporters)
+Values: [reporters](https://github.com/mochajs/mocha/tree/master/lib/reporters)
 
 The reporter that will be used.
 
